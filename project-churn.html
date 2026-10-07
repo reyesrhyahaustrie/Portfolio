@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Customer Churn Prediction Analysis | Rhyah Austrie Reyes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .project-header { text-align: center; margin: 4rem 0 2rem; }
+        .project-content { 
+            background: var(--clr-bg-alt); 
+            padding: 3rem; 
+            border-radius: 18px; 
+            box-shadow: var(--shadow); 
+            margin-bottom: 4rem; 
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .project-content h3 { margin-top: 2rem; margin-bottom: 0.5rem; color: var(--clr-primary); font-size: 1.4rem; text-transform: uppercase; font-weight: 700; letter-spacing: 1px;}
+        .workflow-list { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem; }
+        .workflow-list li { background: var(--clr-bg); padding: 1rem 1.5rem; border-radius: 8px; flex: 1 1 45%; border: 1px solid rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body class="light">
+    <header class="header">
+        <div class="header__inner">
+            <div class="social-links">
+                <a href="index.html#projects" class="link link--nav"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+            </div>
+        </div>
+    </header>
+
+    <main style="max-width: 800px;">
+        <div class="project-header">
+            <span class="badge badge--live">LIVE</span>
+            <span class="badge badge--progress" style="margin-left: 0.5em;">GCI Omnicampus April 2026</span>
+            <h1>Customer Churn Prediction Analysis</h1>
+            <p class="subhead">Wrote SQL queries to extract data, filter results, and run data quality checks on large datasets. Built a customer churn prediction model to find trends and submitted a detailed data report based on the results.</p>
+        </div>
+
+        <div class="project-content">
+            <img src="assets/project-churn-analysis.png" alt="Customer Churn Prediction Analysis Notebook" style="width: 100%; border-radius: 12px; margin-bottom: 2rem; background: #111;">
+            
+            <h3>The Problem</h3>
+            <p>Businesses often lose clients unexpectedly due to a lack of visibility into retention metrics, equipment aging, and customer behavior patterns.</p>
+            
+            <h3>The Solution</h3>
+            <p>Developed as a final coursework report for the <strong>GCI Omnicampus April 2026</strong> program, I conducted a comprehensive data analysis using SQL and Python to identify primary churn drivers. I built a Random Forest machine learning model to predict at-risk customers, achieving a solid ROC-AUC score and providing actionable insights for the retention team.</p>
+            
+            <h3>Build Process</h3>
+            <ul class="workflow-list">
+                <li><strong>Step 1: Data Extraction</strong><br>Wrote SQL queries to extract, clean, and join large datasets from multiple databases.</li>
+                <li><strong>Step 2: Preprocessing</strong><br>Utilized Pandas in Python to handle missing values and encode categorical features.</li>
+                <li><strong>Step 3: Model Training</strong><br>Built and trained a Random Forest Classifier to identify patterns in customer churn.</li>
+                <li><strong>Step 4: Visualization</strong><br>Generated Matplotlib and Seaborn charts to present feature importance and actionable business insights.</li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>

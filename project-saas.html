@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Enterprise SaaS Access Management System | Rhyah Austrie Reyes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .project-header { text-align: center; margin: 4rem 0 2rem; }
+        .project-content { 
+            background: var(--clr-bg-alt); 
+            padding: 3rem; 
+            border-radius: 18px; 
+            box-shadow: var(--shadow); 
+            margin-bottom: 4rem; 
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .project-content h3 { margin-top: 2rem; margin-bottom: 0.5rem; color: var(--clr-primary); font-size: 1.4rem; text-transform: uppercase; font-weight: 700; letter-spacing: 1px;}
+        .workflow-list { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem; }
+        .workflow-list li { background: var(--clr-bg); padding: 1rem 1.5rem; border-radius: 8px; flex: 1 1 45%; border: 1px solid rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body class="light">
+    <header class="header">
+        <div class="header__inner">
+            <div class="social-links">
+                <a href="index.html#projects" class="link link--nav"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+            </div>
+        </div>
+    </header>
+
+    <main style="max-width: 800px;">
+        <div class="project-header">
+            <span class="badge badge--live">LIVE</span>
+            <h1>Enterprise SaaS Access Management System</h1>
+            <p class="subhead">Centralized Google Sheets dashboard for tracking employee software licenses, utilizing data validation and dynamic COUNTIF arrays for real-time headcount and access auditing.</p>
+        </div>
+
+        <div class="project-content">
+            <img src="assets/project-saas-tracker.png" alt="SaaS Access Tracker Dashboard" style="width: 100%; border-radius: 12px; margin-bottom: 2rem; background: #111;">
+            
+            <h3>The Problem</h3>
+            <p>Tracking employee software licenses and access across multiple platforms (Google Workspace, Slack, monday.com) using scattered spreadsheets leads to shadow IT, missed offboarding revocations, and wasted license costs.</p>
+            
+            <h3>The Solution</h3>
+            <p>Built an enterprise-grade, centralized SaaS Access Management dashboard in Google Sheets. It utilizes strict data validation, corporate-level formatting, and dynamic COUNTIF arrays to provide real-time visibility into active seats, pending onboarding, and suspended accounts.</p>
+            
+            <h3>Build Process</h3>
+            <ul class="workflow-list">
+                <li><strong>Step 1: Database Structure</strong><br>Created an Access Register with strict data validation chips for statuses and tool access.</li>
+                <li><strong>Step 2: UI/UX Design</strong><br>Applied corporate minimalist styling, removing default gridlines and using semantic colors for quick visual auditing.</li>
+                <li><strong>Step 3: Metrics Automation</strong><br>Engineered dynamic COUNTIF formulas to calculate active headcounts and license utilization.</li>
+                <li><strong>Step 4: Audit Readiness</strong><br>Integrated a "Last Audit Date" tracking system for monthly compliance reviews.</li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IT Helpdesk & Staff Asset Tracker | Rhyah Austrie Reyes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .project-header { text-align: center; margin: 4rem 0 2rem; }
+        .project-content { 
+            background: var(--clr-bg-alt); 
+            padding: 3rem; 
+            border-radius: 18px; 
+            box-shadow: var(--shadow); 
+            margin-bottom: 4rem; 
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .project-content h3 { margin-top: 2rem; margin-bottom: 0.5rem; color: var(--clr-primary); font-size: 1.4rem; text-transform: uppercase; font-weight: 700; letter-spacing: 1px;}
+        .workflow-list { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem; }
+        .workflow-list li { background: var(--clr-bg); padding: 1rem 1.5rem; border-radius: 8px; flex: 1 1 45%; border: 1px solid rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body class="light">
+    <header class="header">
+        <div class="header__inner">
+            <div class="social-links">
+                <a href="index.html#projects" class="link link--nav"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+            </div>
+        </div>
+    </header>
+
+    <main style="max-width: 800px;">
+        <div class="project-header">
+            <span class="badge badge--live">LIVE</span>
+            <h1>IT Helpdesk & Staff Asset Tracker</h1>
+            <p class="subhead">Centralized monday.com workspace featuring an IT ticketing system and a BYOD hardware/access tracker with custom board automations.</p>
+        </div>
+
+        <div class="project-content">
+            <img src="assets/project-staff-monday.png" alt="monday.com IT Helpdesk Board" style="width: 100%; border-radius: 12px; margin-bottom: 2rem; background: #111;">
+            
+            <h3>The Problem</h3>
+            <p>Managing IT support requests, employee SaaS access, and BYOD hardware audits via email threads or static sheets leads to missed requests, security vulnerabilities during offboarding, and disorganized asset tracking.</p>
+            
+            <h3>The Solution</h3>
+            <p>Built a robust IT Operations workspace in monday.com consisting of two integrated boards. It utilizes custom forms for ticket submission and native board automations to streamline status updates, SLA tracking, and staff offboarding.</p>
+            
+            <h3>Build Process</h3>
+            <ul class="workflow-list">
+                <li><strong>Step 1: Ticketing System</strong><br>Configured a board with an external form for staff to easily submit IT bugs, password resets, and provisioning requests.</li>
+                <li><strong>Step 2: Asset Management</strong><br>Built a tracking board to monitor BYOD device types, minimum internet speed requirements, and SaaS access states.</li>
+                <li><strong>Step 3: Custom Automations</strong><br>Set up trigger (e.g., automatically moving a row to the "Offboarded" group when access is revoked).</li>
+                <li><strong>Step 4: Status Monitoring</strong><br>Applied color-coded priority columns and resolution date tracking to maintain IT operations SLAs.</li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
