@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="./assets/favicon.ico">
     <link rel="stylesheet" href="style.css" />
     <style>
         .project-header { text-align: center; margin: 4rem 0 2rem; }
@@ -49,14 +50,14 @@
             
             <h3>The Problem & Solution</h3>
             <p><strong>Problem:</strong> Scattered financial and marketing metrics across multiple platforms make it difficult to spot real-time revenue trends, calculate conversion rates accurately, and allocate budgets effectively.</p>
-            <p><strong>Solution:</strong> Engineered a centralized data pipeline that merges disparate datasets into a single source of truth, outputting actionable insights directly to stakeholders.</p>
+            <p><strong>Solution:</strong> Engineered a centralized data pipeline that merges disparate datasets into a single source of truth, using a left-join strategy anchored on the CRM table to preserve every closed deal, even without a matching marketing or support record.</p>
             
             <h3>Build Process</h3>
             <ul class="workflow-list">
-                <li><strong>Step 1: Data Integration</strong><br>Merged raw CSV datasets (Deals, Campaigns, Tickets) using native joins.</li>
-                <li><strong>Step 2: Data Cleaning</strong><br>Standardized data types and added calculated fields for cross-referencing.</li>
-                <li><strong>Step 3: Visualization</strong><br>Built interactive charts tracking Total Leads, Response Rates, and Conversions.</li>
-                <li><strong>Step 4: AI Insights</strong><br>Configured Agentic AI topics to generate automated natural language insights.</li>
+                <li><strong>Step 1: Data Integration</strong><br>Joined raw CSV datasets (Deals, Campaigns, Tickets) on a shared account ID using left joins, then resolved the resulting row multiplication so downstream revenue metrics stayed accurate instead of inflated.</li>
+                <li><strong>Step 2: Data Cleaning</strong><br>Standardized data types and added calculated fields, days-to-close, campaign ROI, and ticket resolution time, to support cross-referencing and deeper analysis.</li>
+                <li><strong>Step 3: Visualization</strong><br>Built a three-sheet interactive dashboard tracking total leads, response rates, conversions, win rates, and account health, with filters, one-click filtering, and cross-sheet navigation.</li>
+                <li><strong>Step 4: AI-Powered Q&A</strong><br>Configured a Quick Chat Topic with business-context instructions and synonyms, so stakeholders can ask natural language questions and get answers grounded in the correct dataset.</li>
             </ul>
 
             <h3>Gallery</h3>
